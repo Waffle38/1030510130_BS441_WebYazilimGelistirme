@@ -1,13 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-import {Match} from "./match";
+import {Modes} from "./Modes";
 
 
 const App = () => {
 
     return (
-        <Match/>
+        <div className="App">
+            <h1>Welcome to RPS</h1>
+            <p>Choose a mode</p>
+            <Modes/>
+        </div>
     )
 }
 
