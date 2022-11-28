@@ -5,6 +5,8 @@ import {Navbar} from "./Navbar";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import {About} from "./About";
 import {NotFound} from "./NotFound";
+import {Versus} from "./Versus";
+import {Town} from "./Town";
 
 
 const App = () => {
@@ -17,6 +19,8 @@ const App = () => {
                     <Routes>
                         <Route path="/" element={<Home/>}/>
                         <Route path="/about" element={<About/>}/>
+                        <Route path="/versus" element={<Versus/>}/>
+                        <Route path="/town" element={<Town/>}/>
                         <Route path="*" element={<NotFound/>}/>
                     </Routes>
                 </div>
@@ -26,4 +30,4 @@ const App = () => {
     );
 }
 
-ReactDOM.render(<App/>, document.getElementById("root"));
+ReactDOM.render(<React.StrictMode> <App/> </React.StrictMode>, document.getElementById("root"));

@@ -33,3 +33,20 @@
     margin: 0 auto;
 }
 
+.modes a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+}
+
+.modes a:hover {
+    color: #f1356d;
+}
+
+.versus img {
+    filter: contrast(0);
+}
+
+.versus img:hover{
+    filter: contrast(1);
+}

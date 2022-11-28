@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 export function Home()
 {
@@ -8,8 +9,8 @@ export function Home()
             <h1>Welcome to RPS</h1>
             <p>Choose a mode</p>
             <div className="modes">
-                <button>1 vs 1</button>
-                <button>Town</button>
+                <Link to="/versus">Versus</Link>
+                <Link to="/town">Town</Link>
             </div>
         </div>
     );
