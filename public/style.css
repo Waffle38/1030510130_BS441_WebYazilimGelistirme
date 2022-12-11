@@ -27,26 +27,55 @@
 }
 
 .home {
-    align-items: center;
-    padding: 20px;
-    max-width: 300px;
+    display: table;
+    text-align: center;
     margin: 0 auto;
 }
 
-.modes a {
-    margin-left: 16px;
-    text-decoration: none;
+.modes {
+    align-items: center;
+}
+
+.modes button{
     padding: 6px;
+    background-color: white;
+    margin-left: 6px;
+    margin-top: 10px;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    transition-duration: 0.2s;
 }
 
-.modes a:hover {
-    color: #f1356d;
+.modes button:hover{
+    background: #4CAF50;
 }
 
-.versus img {
-    filter: contrast(0);
+.modes a{
+    text-decoration: none;
+    transition-duration: 0.2s;
 }
 
-.versus img:hover{
-    filter: contrast(1);
+.modes a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.versus {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttons button{
+    padding: 6px;
+    display: flex;
+    float: left;
+    border: none;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition-duration: 0.2s;
+}
+
+.buttons button:hover{
+    background-color: #4CAF50;
 }

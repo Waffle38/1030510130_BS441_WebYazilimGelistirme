@@ -9,8 +9,8 @@ export function Home()
             <h1>Welcome to RPS</h1>
             <p>Choose a mode</p>
             <div className="modes">
-                <Link to="/versus">Versus</Link>
-                <Link to="/town">Town</Link>
+                <button><Link to="/versus">Versus</Link></button>
+                <button><Link to="/town">Town</Link></button>
             </div>
         </div>
     );
