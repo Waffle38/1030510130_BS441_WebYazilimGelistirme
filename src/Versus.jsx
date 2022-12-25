@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import {VersusGame} from "./VersusGame";
+
+
 
 export function Versus()
 {
@@ -11,16 +12,21 @@ export function Versus()
     const paperPath = "images/Paper.png";
     const scissorPath = "images/Scissors.png";
 
+    function handleClick(number)
+    {
+        setSelection(number);
+    }
+
     return (
         <div className="versus">
             <h1>Versus</h1>
             <p>Choose a button</p>
             <div className="buttons">
-                <button><img src={rockPath} alt="Rock"/></button>
-                <button><img src={paperPath} alt="Papers"/></button>
-                <button><img src={scissorPath} alt="Scissors"/></button>
+                <button onClick={() => {handleClick(1)}}><img src={rockPath} alt="Rock"/></button>
+                <button onClick={() => {handleClick(2)}}><img src={paperPath} alt="Papers"/></button>
+                <button onClick={() => {handleClick(3)}}><img src={scissorPath} alt="Scissors"/></button>
             </div>
-            { selection && <VersusGame sources={[rockPath, paperPath, scissorPath]} sel={selection} selAI={selectionAI}/>}
+            <p>{selection}</p>
         </div>
     );
 }
