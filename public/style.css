@@ -79,3 +79,7 @@
 .buttons button:hover{
     background-color: #4CAF50;
 }
+
+.vertical {
+    display: table;
+}
