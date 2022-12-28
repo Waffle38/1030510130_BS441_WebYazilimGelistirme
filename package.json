@@ -2,7 +2,7 @@
   "author": "Atakan Akgün",
   "name": "rps",
   "version": "1.0.0",
-  "main": "src/client/index.jsx",
+  "main": "src/components/index.jsx",
   "license": "MIT",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

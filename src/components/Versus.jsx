@@ -19,6 +19,20 @@ export function Versus()
     const [victory , setVictory] = useState(0);
     const [condition , setCondition] = useState(0); // 0 = empty, 1 = defeat, 2 = draw, 3 = victory
 
+    const possibleSelections =
+        {
+            Empty: 0,
+            Rock: 1,
+            Paper: 2,
+            Scissors: 3
+        }
+    const possibleConditions =
+        {
+            Empty: 0,
+            Defeat: 1,
+            Draw: 2,
+            Victory: 3
+        }
 
     const rockPath = "images/Rock.png";
     const paperPath = "images/Paper.png";
@@ -38,54 +52,54 @@ export function Versus()
 
             switch (selection)
             {
-                case 1:
-                    if(randomSelection === 1)
+                case possibleSelections.Rock:
+                    if(randomSelection === possibleSelections.Rock)
                     {
-                        setCondition(2);
+                        setCondition(possibleConditions.Draw);
                         setDraw(draw + 1);
                     }
-                    else if(randomSelection === 2)
+                    else if(randomSelection === possibleSelections.Paper)
                     {
-                        setCondition(1);
+                        setCondition(possibleConditions.Defeat);
                         setDefeat(defeat + 1);
                     }
-                    else
+                    else if(randomSelection === possibleSelections.Scissors)
                     {
-                        setCondition(3);
+                        setCondition(possibleConditions.Victory);
                         setVictory(victory + 1);
                     }
                     break;
-                case 2:
-                    if(randomSelection === 1)
+                case possibleSelections.Paper:
+                    if(randomSelection === possibleSelections.Rock)
                     {
-                        setCondition(3);
+                        setCondition(possibleConditions.Victory);
                         setVictory(victory + 1);
                     }
-                    else if(randomSelection === 2)
+                    else if(randomSelection === possibleSelections.Paper)
                     {
-                        setCondition(2);
+                        setCondition(possibleConditions.Draw);
                         setDraw(draw + 1);
                     }
-                    else
+                    else if(randomSelection === possibleSelections.Scissors)
                     {
-                        setCondition(1);
+                        setCondition(possibleConditions.Defeat);
                         setDefeat(defeat + 1);
                     }
                     break;
-                case 3:
-                    if(randomSelection === 1)
+                case possibleSelections.Scissors:
+                    if(randomSelection === possibleSelections.Rock)
                     {
-                        setCondition(1);
+                        setCondition(possibleConditions.Defeat);
                         setDefeat(defeat + 1);
                     }
-                    else if(randomSelection === 2)
+                    else if(randomSelection === possibleSelections.Paper)
                     {
-                        setCondition(3);
+                        setCondition(possibleConditions.Victory);
                         setVictory(victory + 1);
                     }
-                    else
+                    else if(randomSelection === possibleSelections.Scissors)
                     {
-                        setCondition(2);
+                        setCondition(possibleConditions.Draw);
                         setDraw(draw + 1);
                     }
                     break;

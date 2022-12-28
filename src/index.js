@@ -2,12 +2,12 @@ import React from "react";
 import ReactDOM from "react-dom";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Navbar} from "./client/Navbar";
-import {Home} from "./client/Home";
-import {About} from "./client/About";
-import {Versus} from "./client/Versus";
-import {FactoryWars} from "./client/FactoryWars";
-import {NotFound} from "./client/NotFound";
+import {Navbar} from "./components/Navbar";
+import {Home} from "./components/Home";
+import {About} from "./components/About";
+import {Versus} from "./components/Versus";
+import {FactoryWars} from "./components/FactoryWars";
+import {NotFound} from "./components/NotFound";
 import {Col, Container, Row, ThemeProvider} from "react-bootstrap";
 
 
