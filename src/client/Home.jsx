@@ -10,7 +10,7 @@ export function Home()
             <p>Choose a game mode</p>
             <div className="modes">
                 <button><Link to="/versus">Versus</Link></button>
-                <button><Link to="/town">FactoryWars</Link></button>
+                <button><Link to="/factory">FactoryWars</Link></button>
             </div>
         </div>
     );

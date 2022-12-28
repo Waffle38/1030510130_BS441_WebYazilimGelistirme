@@ -29,7 +29,7 @@ const App = () => {
                                         <Route path="/" element={<Home/>}/>
                                         <Route path="/about" element={<About/>}/>
                                         <Route path="/versus" element={<Versus/>}/>
-                                        <Route path="/town" element={<FactoryWars/>}/>
+                                        <Route path="/factory" element={<FactoryWars/>}/>
                                         <Route path="*" element={<NotFound/>}/>
                                     </Routes>
                                 </div>
