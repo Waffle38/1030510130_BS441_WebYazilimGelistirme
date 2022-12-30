@@ -8,9 +8,11 @@ import {About} from "./components/About";
 import {Versus} from "./components/Versus";
 import {FactoryWars} from "./components/FactoryWars";
 import {NotFound} from "./components/NotFound";
-import {Col, Container, Row, ThemeProvider} from "react-bootstrap";
+import {ThemeProvider} from "react-bootstrap";
 
-
+//<Container>
+  //  <Row className="justify-content-md-center">
+    //    <Col md="">
 const App = () => {
 
     return (
@@ -18,26 +20,20 @@ const App = () => {
             breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
             minBreakpoint="xxs"
         >
-            <Container>
-                <Row className="justify-content-md-center">
-                    <Col md="">
-                        <BrowserRouter>
-                            <div className="App">
-                                <Navbar/>
-                                <div className="Content">
-                                    <Routes>
-                                        <Route path="/" element={<Home/>}/>
-                                        <Route path="/about" element={<About/>}/>
-                                        <Route path="/versus" element={<Versus/>}/>
-                                        <Route path="/factory" element={<FactoryWars/>}/>
-                                        <Route path="*" element={<NotFound/>}/>
-                                    </Routes>
-                                </div>
-                            </div>
-                        </BrowserRouter>
-                    </Col>
-                </Row>
-            </Container>
+            <BrowserRouter>
+                <div className="App">
+                    <Navbar/>
+                    <div className="Content">
+                        <Routes>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/about" element={<About/>}/>
+                            <Route path="/versus" element={<Versus/>}/>
+                            <Route path="/factory" element={<FactoryWars/>}/>
+                            <Route path="*" element={<NotFound/>}/>
+                        </Routes>
+                    </div>
+                </div>
+            </BrowserRouter>
         </ThemeProvider>
     );
 }
