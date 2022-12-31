@@ -9,7 +9,7 @@ export function Navbar()
                 <Link to="/">RPS</Link>
             </h1>
             <div className="links">
-                <Link to="/About">About</Link>
+                <Link to="/how">How to Play</Link>
             </div>
         </nav>
     );

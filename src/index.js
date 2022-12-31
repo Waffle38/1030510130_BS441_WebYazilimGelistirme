@@ -4,7 +4,7 @@ import {BrowserRouter, Route, Routes} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Navbar} from "./components/Navbar";
 import {Home} from "./components/Home";
-import {About} from "./components/About";
+import {How} from "./components/How";
 import {Versus} from "./components/Versus";
 import {FactoryWars} from "./components/FactoryWars";
 import {NotFound} from "./components/NotFound";
@@ -26,7 +26,7 @@ const App = () => {
                     <div className="Content">
                         <Routes>
                             <Route path="/" element={<Home/>}/>
-                            <Route path="/about" element={<About/>}/>
+                            <Route path="/how" element={<How/>}/>
                             <Route path="/versus" element={<Versus/>}/>
                             <Route path="/factory" element={<FactoryWars/>}/>
                             <Route path="*" element={<NotFound/>}/>
