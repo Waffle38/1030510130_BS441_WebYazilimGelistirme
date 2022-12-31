@@ -34,8 +34,9 @@ export function How()
                 or block with. for example if the enemy factory attacks with 10 rocks and the player blocks with 10 scissors the player will take 5 damage. This is because a winning shape
                 will do 2 times the damage against the enemy factory but not against the enemy itself. a losing shape will do half the damage for example if you attack with 20 scissors
                 and the AI blocks with 10 rocks you will do no damage. This is because with the modifier the 10 rocks will completely negate the 20 scissors. if the player and the AI choose shapes
-                that draw each other then there are no modifiers. Additionally the player can pass on attacking or blocking to reserve shape amounts. After attacking or blocking
-                the damages will be resolved and the player can see which factory the AI used to block or attack. And the player can continue the game by pressing the continue button.
+                that draw each other then there are no modifiers. Additionally the player can pass on attacking or blocking to reserve shape amounts. Be careful about passing because if you pass on an attack or block turn,
+                you won't attack or block. After attacking or blocking the damages will be resolved and the player can see which factory the AI used to block or attack.
+                And the player can continue the game by pressing the continue button.
             </p>
         </div>
     );
